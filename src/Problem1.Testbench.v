@@ -1,0 +1,93 @@
+module testbenchQ1();
+reg A,B,C,D;
+wire out;
+func f1(.A(A), .B(B), .C(C), .D(D), .out(out));
+initial
+begin
+assign A=0;
+assign B=0;
+assign C=0;
+assign D=0;
+#100;
+assign A=0;
+assign B=0;
+assign C=0;
+assign D=1;
+#100;
+assign A=0;
+assign B=0;
+assign C=1;
+assign D=0;
+#100;
+assign A=0;
+assign B=0;
+assign C=1;
+assign D=1;
+#100;
+
+assign A=0;
+assign B=1;
+assign C=0;
+assign D=0;
+#100;
+assign A=0;
+assign B=1;
+assign C=0;
+assign D=1;
+#100;
+assign A=0;
+assign B=1;
+assign C=1;
+assign D=0;
+#100;
+assign A=0;
+assign B=1;
+assign C=1;
+assign D=1;
+#100;
+
+assign A=1;
+assign B=0;
+assign C=0;
+assign D=0;
+#100;
+assign A=1;
+assign B=0;
+assign C=0;
+assign D=1;
+#100;
+assign A=1;
+assign B=0;
+assign C=1;
+assign D=0;
+#100;
+assign A=1;
+assign B=0;
+assign C=1;
+assign D=1;
+#100;
+
+assign A=1;
+assign B=1;
+assign C=0;
+assign D=0;
+#100;
+assign A=1;
+assign B=1;
+assign C=0;
+assign D=1;
+#100;
+assign A=1;
+assign B=1;
+assign C=1;
+assign D=0;
+#100;
+assign A=1;
+assign B=1;
+assign C=1;
+assign D=1;
+#100;
+
+$finish;
+end
+endmodule
